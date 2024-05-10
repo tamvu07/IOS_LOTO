@@ -23,7 +23,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var row5View: CotentRowUIView!
     
     @IBOutlet weak var titleNumberView: UIView!
-    
+    @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var titleNumberLabel: UILabel!
     
     
@@ -64,6 +64,7 @@ class DetailViewController: UIViewController {
         row5View.setData(arrayData: R5)
         
         titleNumberView.layer.borderColor = UIColor.black.cgColor
+        backgroundView.layer.borderColor = UIColor.black.cgColor
         titleNumberLabel.text = "\(numberTitle)"
     }
     
