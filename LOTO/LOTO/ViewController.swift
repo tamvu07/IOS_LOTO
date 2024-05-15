@@ -11,20 +11,19 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var roundTextField: UITextField!
     @IBOutlet weak var numberTable: UITableView!
-    
     
     let numbers = Array(1...40)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         numberTable.register(UINib(nibName: "NumberCell", bundle: nil), forCellReuseIdentifier: "NumberCell")
         numberTable.delegate = self
         numberTable.dataSource = self
         numberTable.tableFooterView = UIView()
         numberTable.reloadData()
-    
+        roundTextField.addTarget(self, action: #selector(enterPressed), for: .editingDidEndOnExit)
     }
     
 
@@ -33,9 +32,14 @@ class ViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: .main)
         let destinations = storyboard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
         destinations.numberTitle = numbers[index]
+        destinations.round = roundTextField.text ?? ""
         self.navigationController?.pushViewController(destinations, animated: true)
     }
     
+    @objc func enterPressed(){
+        //do something with typed text if needed
+        roundTextField.resignFirstResponder()
+    }
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {

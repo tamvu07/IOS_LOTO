@@ -26,6 +26,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var titleNumberLabel: UILabel!
     
+    @IBOutlet weak var roundLabel: UILabel!
+    
+    var round: String = ""
     
     var R1: [Obj1] = []
     var R2: [Obj1] = []
@@ -66,10 +69,17 @@ class DetailViewController: UIViewController {
         titleNumberView.layer.borderColor = UIColor.black.cgColor
         backgroundView.layer.borderColor = UIColor.black.cgColor
         titleNumberLabel.text = "\(numberTitle)"
+        
+        roundLabel.text = "Vòng \(round)"
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+    }
+    
+    
+    @IBAction func backAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     func getRandomR() -> [Obj1] {
