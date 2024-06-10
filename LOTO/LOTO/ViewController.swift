@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var roundTextField: UITextField!
     @IBOutlet weak var numberTable: UITableView!
     
-    let numbers = Array(1...40)
+    let numbers = Array(241...250)
     
     override func viewDidLoad() {
         super.viewDidLoad()
