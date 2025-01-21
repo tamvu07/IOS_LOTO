@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E802AE842D3F4BB800FCC6C9 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E802AE832D3F4BB800FCC6C9 /* ViewController2.swift */; };
+		E802AE862D3F519700FCC6C9 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = E802AE852D3F519700FCC6C9 /* ViewController3.swift */; };
 		E80670292BED1B8C002F8DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80670282BED1B8C002F8DE0 /* AppDelegate.swift */; };
 		E806702B2BED1B8C002F8DE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E806702A2BED1B8C002F8DE0 /* SceneDelegate.swift */; };
 		E806702D2BED1B8C002F8DE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E806702C2BED1B8C002F8DE0 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E802AE832D3F4BB800FCC6C9 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		E802AE852D3F519700FCC6C9 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		E80670252BED1B8C002F8DE0 /* LOTO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOTO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80670282BED1B8C002F8DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E806702A2BED1B8C002F8DE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +80,8 @@
 				E80670332BED1B8D002F8DE0 /* LaunchScreen.storyboard */,
 				E80670362BED1B8D002F8DE0 /* Info.plist */,
 				E89376752BEDABCB00D4618B /* DetailViewController.swift */,
+				E802AE832D3F4BB800FCC6C9 /* ViewController2.swift */,
+				E802AE852D3F519700FCC6C9 /* ViewController3.swift */,
 			);
 			path = LOTO;
 			sourceTree = "<group>";
@@ -171,7 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E802AE842D3F4BB800FCC6C9 /* ViewController2.swift in Sources */,
 				E806702D2BED1B8C002F8DE0 /* ViewController.swift in Sources */,
+				E802AE862D3F519700FCC6C9 /* ViewController3.swift in Sources */,
 				E80670292BED1B8C002F8DE0 /* AppDelegate.swift in Sources */,
 				E89376822BEDB00B00D4618B /* NumberCell.swift in Sources */,
 				E89376762BEDABCB00D4618B /* DetailViewController.swift in Sources */,
